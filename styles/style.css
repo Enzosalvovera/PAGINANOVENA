@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+:root {
+    --color-primaria: #c40c0c;
+    --color-secundaria: #F6F6F6;
+    --color-terciaria: #f6f6f6;
+    --color-hover: #272727;
+
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-primaria);
+    color: var(--color-secundaria);
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu{
+    padding: 2% 0% 0% 15%;
+    display: flex;
+    gap: 80px;
+    flex-direction: row;
+}
+.header__menu__link{
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-terciaria);
+    text-decoration: none;
+}
+
+
+
+.presentacion {
+    padding: 1% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentacion__contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.presentacion__contenido__titulo{
+    font-size: 2rem;
+    font-family: var(--fuente-krona);
+}
+
+.titulo-destaque {
+    color: var(--color-terciaria); ;
+}
+
+.presentacion__contenido__texto{
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion__enlaces{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion__enlaces__subtitulo{
+    font-family: var(--fuente-krona);
+    font-weight: 300;
+    font-size: 1rem;
+}
+.presentacion__enlaces__link{
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      border: 2px solid var(--color-terciaria);
+      width: 50%;
+      text-align: center;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 400;
+      padding: 21.5px 0;
+      text-decoration: none;
+      color: var(--color-secundaria);
+      font-family: var(--fuente-montserrat);
+}
+
+.presentacion__enlaces__link:hover{
+    background-color: var(--color-hover);
+}
+
+.presentacion__imagen{
+    width: 50%;
+}
+
+.imagen_header{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer{
+    color:var(--color-primaria);
+    background-color: var(--color-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+
+    .header{
+         padding: 10%;  
+    }
+    .header__menu{
+        justify-content: center;
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+
+    }
+
+    .presentacion__contenido{
+        width: auto;
+    }
+    
+}
+
+.timeline {
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px 0;
+}
+
+.timeline-component {
+      position: relative;
+      width: 50%; /* O ajusta según tu diseño */
+      padding: 10px 20px;
+      background-color: white; /* Para los recuadros de contenido */
+      margin: 10px 0;
+      box-sizing: border-box;
+}
+
+.timeline-component::after { /* Para la línea divisoria */
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 1px;
+      background-color: #ddd; /* Color de la línea */
+}
+
+.timeline-component::before { /* El punto en la línea */
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #007bff; /* Color del punto */
+      top: 20px; /* Ajusta la posición */
+}
+.container_left {
+      left: 0;
+}
+
+.container_right {
+      left: 6rem;
+}
+
+.content {
+      padding: 20px;
+      background-color: var(--color-primaria);
+      position: relative;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
