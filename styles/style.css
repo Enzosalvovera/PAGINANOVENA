@@ -5,7 +5,7 @@
     --color-primaria: #c40c0c;
     --color-secundaria: #F6F6F6;
     --color-terciaria: #f6f6f6;
-    --color-hover: #272727;
+    --color-hover: #fa0808;
 
     --fuente-krona: 'Krona One', sans-serif;
     --fuente-montserrat: 'Montserrat', sans-serif;
@@ -23,13 +23,13 @@ body{
 }
 
 .header{
-    padding: 2% 0% 0% 15%;
+    padding: 1% 15%;
 }
 
 .header__menu{
-    padding: 2% 0% 0% 15%;
+    padding: 1% 15%;
     display: flex;
-    gap: 80px;
+    gap: 1rem;
     flex-direction: row;
 }
 .header__menu__link{
@@ -72,6 +72,7 @@ body{
 }
 
 .presentacion__enlaces{
+    padding: 1% 15%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -87,14 +88,13 @@ body{
 .presentacion__enlaces__link{
       display: flex;
       justify-content: center;
-      gap: 16px;
-      border: 2px solid var(--color-terciaria);
+      gap: 1rem;
+      border: 0.2rem solid var(--color-terciaria);
       width: 50%;
       text-align: center;
-      border-radius: 6px;
+      border-radius: 1rem;
       font-size: 1rem;
       font-weight: 400;
-      padding: 21.5px 0;
       text-decoration: none;
       color: var(--color-secundaria);
       font-family: var(--fuente-montserrat);
@@ -102,6 +102,14 @@ body{
 
 .presentacion__enlaces__link:hover{
     background-color: var(--color-hover);
+    color: black;
+    border: 0.2rem solid black;
+
+}
+
+.header__menu__link:hover{
+    border: 0.2rem solid black;
+    border-radius: 0.7rem;
 }
 
 .presentacion__imagen{
@@ -111,10 +119,9 @@ body{
 .imagen_header{
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 100%;
     background-position: center;
     background-size: cover;
-    height: 200px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -123,11 +130,12 @@ body{
 .footer{
     color:var(--color-primaria);
     background-color: var(--color-terciaria);
-    padding: 24px;
+    padding: 2% 0% 0% 15%;
     text-align: center;
     font-family: var(--fuente-krona);
     font-size: 1.5rem;
     font-weight: 400;
+    flex-direction: column;
 }
 
 @media (max-width: 1200px) {
